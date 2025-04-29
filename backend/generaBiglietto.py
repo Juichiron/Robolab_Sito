@@ -77,7 +77,7 @@ def draw_ticket(title_text, nome, cognome, identifier, event_date, aula_text, pi
     circle_r = 15 * mm
     
     # Carica e posiziona il logo Uniba
-    logo_uniba = os.path.join(base_dir, "img", "logoUniba.png")
+    logo_uniba = os.path.join(base_dir, "./generaBiglietto/img", "logoUniba.png")
     logo_size = circle_r * 2  # Diametro del cerchio
     c.drawImage(logo_uniba, 
                 circle_x, 
@@ -105,7 +105,7 @@ def draw_ticket(title_text, nome, cognome, identifier, event_date, aula_text, pi
     c.rect(rect_x, rect_y, rect_w, rect_h, stroke=1, fill=0)
 
     # --- LOGO ROBOLAB IN ALTO NEL RETTANGOLO ---
-    logo_robolab = os.path.join(base_dir, "img", "logoRobolab.png")
+    logo_robolab = os.path.join(base_dir, "./generaBiglietto/img", "logoRobolab.png")
     logo_h = 30 * mm
     logo_w = 30 * mm
     circular_robolab = make_circular_image(logo_robolab)
@@ -121,7 +121,7 @@ def draw_ticket(title_text, nome, cognome, identifier, event_date, aula_text, pi
     c.line(x_center - size_x, x_y + size_x, x_center + size_x, x_y - size_x)
 
     # --- LOGO PROVA IN BASSO NEL RETTANGOLO ---
-    logo_prova = os.path.join(base_dir, "img", "logoRobolab.png")
+    logo_prova = os.path.join(base_dir, "./generaBiglietto/img", "logoRobolab.png")
     logo_p_h = 30 * mm
     logo_p_w = 30 * mm
     circular_prova = make_circular_image(logo_prova)
